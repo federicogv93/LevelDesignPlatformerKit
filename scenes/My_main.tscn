@@ -471,7 +471,43 @@ transform = Transform3D(0.0639648, 0.0175804, 0.00662436, -0.0329303, 0.138079, 
 transform = Transform3D(4.426, 0, 0, 0, 7.13, 0, 0, 0, 4.426, -17.745, -17.0696, -1.927)
 
 [node name="block-grass-large2" parent="Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.225938, 0, 0, 0, 0.140252, 0, 0, 0, 0.225938, -4.24385e-05, 1.35618, 1.32888)
+transform = Transform3D(0.226, 0, 0, 0, 0.235, 0, 0, 0, 0.226, 1.26575, -0.690858, 1.72929)
+
+[node name="block-grass-large6" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.226, 0, 0, 0, 0.235, 0, 0, 0, 0.226, 0.813883, -0.642658, 2.96776)
+
+[node name="block-grass-large8" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.412585, -0.557696, 4.32233)
+
+[node name="block-grass-large11" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.478614, -0.557696, -0.968272)
+
+[node name="block-grass-large12" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.591308, -0.347732, -0.968272)
+
+[node name="block-grass-large13" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.0882695, -0.0808995, -1.01168)
+
+[node name="block-grass-large14" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.560042, 0.1459, -1.15874)
+
+[node name="block-grass-large15" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.0864108, 0.433262, -1.15874)
+
+[node name="block-grass-large16" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.286401, 0.589887, -1.15874)
+
+[node name="block-grass-large17" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.646488, 0.828132, -1.15874)
+
+[node name="block-grass-large9" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.175144, -0.441258, 4.37712)
+
+[node name="block-grass-large10" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.21707, -0.309939, 5.10324)
+
+[node name="block-grass-large7" parent="Mounts" instance=ExtResource("22_q8xee")]
+transform = Transform3D(0.519, 0, 0, 0, 0.54, 0, 0, 0, 0.519, 0.328541, -0.637635, 4.8711)
 
 [node name="block-grass-large3" parent="Mounts" instance=ExtResource("22_q8xee")]
 transform = Transform3D(0.631, 0, 0, 0, 0.140393, 0, 0, 0, 0.536, 0.110381, -0.00269294, 1.31127)
@@ -502,6 +538,9 @@ transform = Transform3D(1.1713, 0, 0, 0, 0.291086, 0, 0, 0, 0.873988, 0.00089979
 
 [node name="saw2" parent="Mounts" instance=ExtResource("28_o5dm8")]
 transform = Transform3D(0.221382, 0, 0, 0, 0.137425, 0, 0, 0, 0.221382, -0.0349522, 0.578216, 1.72584)
+
+[node name="button" parent="Mounts" instance=ExtResource("8_k4rfy")]
+transform = Transform3D(0.225938, 0, 0, 0, 0.140252, 0, 0, 0, 0.225938, 0.455085, -0.111891, 5.06129)
 
 [node name="cube" parent="." instance=ExtResource("19_nct0e")]
 transform = Transform3D(65316.3, 0, 0, 0, 1.15094, 0, 0, 0, 77213.3, -19.9977, -22.6193, 6.04412)
@@ -630,6 +669,9 @@ text = "TIME"
 label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="platform-moving" parent="." instance=ExtResource("4_alq7w")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.91129, -20.0955, -1.60881)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
