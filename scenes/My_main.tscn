@@ -72,10 +72,10 @@ point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_1td1w"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -22.041, -21.371, 4.121, 0, 0, 0, 0, 0, 0, -22.0413, -13.548, 4.12053, 0, 0, 0, 0, 0, 0, -26.9312, -10.3841, 15.0699, 0, 0, 0, 0, 0, 0, -17.04, -1.51651, 14.0366),
-"tilts": PackedFloat32Array(0, 0, 0, 0)
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -19.7557, -21.4715, 20.5086, 0, 0, 0, 0, 0, 0, -23.0503, -11.4737, 20.7747, 0, 0, 0, 0, 0, 0, -17.2288, -1.62795, 14.0366),
+"tilts": PackedFloat32Array(0, 0, 0)
 }
-point_count = 4
+point_count = 3
 
 [sub_resource type="LabelSettings" id="LabelSettings_ri8jt"]
 font = ExtResource("25_qlraj")
@@ -122,13 +122,11 @@ fov = 40.0
 [node name="Sun" type="DirectionalLight3D" parent="World"]
 transform = Transform3D(-0.415614, -0.566222, 0.711799, 0.0766243, 0.758012, 0.647724, -0.906308, 0.323744, -0.271654, 32.6884, 43.7926, -20.4431)
 light_color = Color(0.619368, 0.744864, 1, 1)
-light_energy = 2.369
-light_indirect_energy = 1.486
-light_volumetric_fog_energy = 100.0
+light_energy = 3.0
+light_indirect_energy = 1.5
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
-shadow_normal_bias = 6.747
 shadow_transmittance_bias = 16.0
-shadow_blur = 5.141
 
 [node name="platform-moving" parent="World" instance=ExtResource("4_alq7w")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99947, 0.0424347, 0)
@@ -204,14 +202,13 @@ transform = Transform3D(1, 0, 0, 0, 0.999997, 0, 0, 0, 1, -15.7308, -17.8674, 20
 target = NodePath("../moving_object_path3")
 
 [node name="platform-moving4" parent="World" instance=ExtResource("4_alq7w")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.1497, -21.2881, 3.80072)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.7624, -21.7461, 20.5154)
 
 [node name="moving_object_path4" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_lxme0")]
 curve = SubResource("Curve3D_1td1w")
 object_to_move = NodePath("../platform-moving4")
 movement_speed = 5.0
 is_on_from_start = false
-look_at_object_when_activated = true
 
 [node name="player_kill_volume" parent="World" instance=ExtResource("14_kjmcv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -27, 0)
@@ -731,16 +728,16 @@ transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.26
 transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.03501, -2.87383, 1.01796)
 
 [node name="cloud139" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.16111, -2.87383, 0.932078)
+transform = Transform3D(0.212592, 0, -0.0661379, 0, 0.500546, 0, 0.0661379, 0, 0.212592, 3.1537, -2.87383, 0.969164)
 
 [node name="cloud140" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.09013, -2.77712, 0.793409)
+transform = Transform3D(0.0810806, 0, -0.0252244, 0, 0.190903, 0, 0.0252244, 0, 0.0810806, 3.11593, -2.87593, 0.769888)
 
 [node name="cloud141" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.11539, -2.9239, 0.855226)
+transform = Transform3D(0.224353, 0, -0.0697969, 0, 0.528237, 0, 0.0697969, 0, 0.224353, 3.12558, -2.86913, 0.82046)
 
 [node name="cloud142" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.00381, -2.89222, 0.806463)
+transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 3.0178, -2.88145, 0.80754)
 
 [node name="cloud143" parent="World/clouds" instance=ExtResource("20_a85pr")]
 transform = Transform3D(0.265451, 0, -0.0825823, 0, 0.625, 0, 0.0825823, 0, 0.265451, 2.94431, -2.80916, 0.857972)
@@ -785,10 +782,10 @@ transform = Transform3D(0.11614, 0, -0.252577, 0, 0.625, 0, 0.252577, 0, 0.11614
 transform = Transform3D(0.11614, 0, -0.252577, 0, 0.625, 0, 0.252577, 0, 0.11614, 2.1399, -3.05344, 0.809192)
 
 [node name="cloud157" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.11614, 0, -0.252577, 0, 0.625, 0, 0.252577, 0, 0.11614, 2.06604, -2.97038, 0.801624)
+transform = Transform3D(0.11614, 0, -0.252577, 0, 0.625, 0, 0.252577, 0, 0.11614, 2.05585, -2.96093, 0.801624)
 
 [node name="cloud158" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(-0.26311, 0, -0.0897595, 0, 0.625, 0, 0.0897595, 0, -0.26311, 1.59535, -3.01296, 0.450027)
+transform = Transform3D(-0.26311, 0, -0.0897595, 0, 0.625, 0, 0.0897595, 0, -0.26311, 1.57717, -3.01296, 0.462476)
 
 [node name="cloud159" parent="World/clouds" instance=ExtResource("20_a85pr")]
 transform = Transform3D(-0.26311, 0, -0.0897595, 0, 0.625, 0, 0.0897595, 0, -0.26311, 1.48997, -3.03506, 0.468807)
@@ -830,7 +827,7 @@ transform = Transform3D(0.276659, 0, 0.0272727, 0, 0.625, 0, -0.0272727, 0, 0.27
 transform = Transform3D(0.276659, 0, 0.0272727, 0, 0.625, 0, -0.0272727, 0, 0.276659, 1.04104, -2.97038, 1.08798)
 
 [node name="cloud172" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.43868, -3.01296, 1.28709)
+transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.429914, -3.01296, 1.32073)
 
 [node name="cloud173" parent="World/clouds" instance=ExtResource("20_a85pr")]
 transform = Transform3D(0.220025, 0, -0.16992, 0, 0.625, 0, 0.16992, 0, 0.220025, 0.288855, -4.55796, 1.32537)
@@ -914,7 +911,7 @@ transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.082
 transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.634151, -3.08513, 1.36693)
 
 [node name="cloud177" parent="World/clouds" instance=ExtResource("20_a85pr")]
-transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.611084, -3.05344, 1.24737)
+transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.622034, -3.00348, 1.26365)
 
 [node name="cloud178" parent="World/clouds" instance=ExtResource("20_a85pr")]
 transform = Transform3D(0.0824197, 0, -0.265501, 0, 0.625, 0, 0.265501, 0, 0.0824197, 0.544831, -2.97038, 1.2345)
@@ -1084,7 +1081,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.1864, -19.9762, 13.724)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8553, -20.7251, 16.7795)
 
 [node name="coin5" parent="World/Coins" instance=ExtResource("24_lspjg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7794, -17.7657, 19.3928)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.8912, -17.7657, 18.6768)
 
 [node name="coin6" parent="World/Coins" instance=ExtResource("24_lspjg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.1054, -12.3361, 5.17064)
@@ -1099,16 +1096,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.7225, -12.3361, 4.01212)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1374, -8.63746, -1.94688)
 
 [node name="coin10" parent="World/Coins" instance=ExtResource("24_lspjg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.308, -20.7881, 3.96929)
+transform = Transform3D(0.734891, 0, -0.678185, 0, 1, 0, 0.678185, 0, 0.734891, -20.5145, -19.717, 19.9371)
 
 [node name="coin11" parent="World/Coins" instance=ExtResource("24_lspjg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.0275, -19.2635, 3.96929)
+transform = Transform3D(0.760032, 0, -0.649886, 0, 1, 0, 0.649886, 0, 0.760032, -20.9376, -17.8876, 20.7268)
 
 [node name="coin12" parent="World/Coins" instance=ExtResource("24_lspjg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.5789, -17.7499, 3.96929)
+transform = Transform3D(0.564477, 0, -0.825449, 0, 1, 0, 0.825449, 0, 0.564477, -21.8374, -15.3506, 20.7268)
 
 [node name="coin13" parent="World/Coins" instance=ExtResource("24_lspjg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9538, -16.5008, 3.96929)
+transform = Transform3D(0.836516, 0, 0.547943, 0, 1, 0, -0.547943, 0, 0.836516, -22.5193, -12.8163, 20.7268)
 
 [node name="coin" parent="World/Coins" instance=ExtResource("24_lspjg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.4055, -9.67319, 10.1354)
@@ -1144,7 +1141,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.18381, 1.28222, -7.23461)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.62202, 1.83551, -2.57302)
 
 [node name="button2" parent="World/FallingTrial" node_paths=PackedStringArray("target") instance=ExtResource("8_k4rfy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37.3629, -4.2754, 11.8853)
+transform = Transform3D(0.992663, 9.26771e-05, 0.120915, -1.98455e-05, 1, -0.00060354, -0.120915, 0.000596713, 0.992663, -37.5934, -4.2754, 12.0638)
 target = NodePath("../../moving_object_path4")
 
 [node name="Mounts" parent="World" instance=ExtResource("22_q8xee")]
@@ -1208,22 +1205,22 @@ transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.114191, -0.959799, 0.5
 transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.114452, -1.0441, 0.828132, 0.463674)
 
 [node name="block-grass-large9" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.552789, -0.623621, 3.96288)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.936863, -0.623621, 3.81671)
 
 [node name="block-grass-large10" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -1.0492, -0.640156, 4.74366)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -2.11812, -0.640156, 4.50628)
 
 [node name="block-grass-large27" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -1.36824, -0.528033, 5.44401)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -1.99015, -0.528033, 5.70453)
 
 [node name="block-grass-large28" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.781689, -0.557499, 6.25861)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -1.05717, -0.557499, 6.65645)
 
 [node name="block-grass-large29" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, -0.0477791, -0.42081, 6.65889)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.139841, -0.42081, 7.08872)
 
 [node name="block-grass-large30" parent="World/Mounts" instance=ExtResource("22_q8xee")]
-transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.534041, -0.453829, 5.95942)
+transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 1.00312, -0.453829, 6.39315)
 
 [node name="block-grass-large31" parent="World/Mounts" instance=ExtResource("22_q8xee")]
 transform = Transform3D(0.154, 0, 0, 0, 0.045, 0, 0, 0, 0.154, 0.987071, -0.243526, 5.66112)
